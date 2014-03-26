@@ -22,10 +22,11 @@ alias cdb='cd -'
 alias df='df -h'
 alias ll='ls -alGh'
 alias ls='ls -Gh'
+alias la='ls -aG'
 alias du='du -h -d 2'
 
 # show me files matching "ls grep"
-alias lsg='ll | grep'
+alias lsg='la | grep'
 
 # Alias Editing
 alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
@@ -108,13 +109,13 @@ alias tf='tail -f'
 alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
-alias cl='clear'
+alias c='clear'
 
 # Zippin
 alias gz='tar -zcvf'
 
 # Ruby
-alias c='rails c' # Rails 3
+alias rc='rails c' # Rails 3
 alias co='script/console --irb=pry' # Rails 2
 alias ts='thin start'
 alias ms='mongrel_rails start'
