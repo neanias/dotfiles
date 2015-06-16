@@ -111,7 +111,7 @@
   # the usual default is to push all branches
   default = tracking
 [core]
-  autocrlf = false
+	autocrlf = input
 	editor = vim
   excludesfile = ~/.yadr/git/gitignore
 	pager = less
@@ -133,3 +133,9 @@
 	email = wncmathewson@me.com
 [github]
 	user = WillMatty
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
