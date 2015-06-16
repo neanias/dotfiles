@@ -106,3 +106,16 @@ set sidescroll=1
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+" ================ Misc ========================
+
+" ---- Direct ctags path for tagbar ----
+let g:tagbar_ctags_bin="/usr/local/bin/ctags"
+
+" ---- Differing split for UltiSnips ----
+let g:UltiSnipsEditSplit="vertical"
+
+" ---- Changing keymaps for UltiSnips jumping ----
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
