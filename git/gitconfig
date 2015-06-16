@@ -2,8 +2,8 @@
 # See the README for examples.
 [color]
   ui = true
-	all = true
-	pager = true
+  all = true
+  pager = true
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -111,17 +111,17 @@
   # the usual default is to push all branches
   default = tracking
 [core]
-	autocrlf = input
-	editor = vim
+  autocrlf = input
+  editor = vim
   excludesfile = ~/.yadr/git/gitignore
-	pager = less
+  pager = less
 [advice]
   statusHints = false
 [diff]
   # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
   # instead of a/b/c/d as prefixes for patches
   mnemonicprefix = true
-	algorithm = patience
+  algorithm = patience
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
@@ -129,13 +129,13 @@
 [include]
   path = .gitconfig.user
 [user]
-	name = William Mathewson
-	email = wncmathewson@me.com
+  name = William Mathewson
+  email = wncmathewson@me.com
 [github]
-	user = WillMatty
+  user = neanias
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
