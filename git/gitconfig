@@ -112,8 +112,8 @@
   default = tracking
 [core]
   autocrlf = input
-  editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+	editor = mvim
+	excludesfile = /Users/williammathewson/.yadr/git/gitignore
   pager = less
 [advice]
   statusHints = false
@@ -129,13 +129,13 @@
 [include]
   path = .gitconfig.user
 [user]
-  name = William Mathewson
-  email = wncmathewson@me.com
+	name = William Mathewson
+	email = wncmathewson@me.com
 [github]
   user = neanias
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
