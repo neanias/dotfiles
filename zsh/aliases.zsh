@@ -159,4 +159,4 @@ alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A
 # Misc
 alias whereami='pwd'
 alias brew_python='/usr/local/bin/python'
-alias brew_pip='/usr/local/bin/pip'
+alias brew_pip='/usr/local/bin/pip-2.7'
