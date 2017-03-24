@@ -17,7 +17,7 @@
   # add
   a = add                           # add
   chunkyadd = add --patch           # stage commits chunk by chunk
-  
+
   # update index
   assume = update-index --assume-unchanged
   unassume = update-index --no-assume-unchanged
@@ -96,16 +96,16 @@
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
-  
+
   # legit aliases
-	switch = !legit switch \"$@\"
-	branches = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
+    switch = !legit switch \"$@\"
+    branches = !legit branches
+    sprout = !legit sprout \"$@\"
+    unpublish = !legit unpublish \"$@\"
+    harvest = !legit harvest \"$@\"
+    sync = !legit sync \"$@\"
+    publish = !legit publish \"$@\"
+    graft = !legit graft \"$@\"
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [mergetool]
@@ -127,11 +127,11 @@
   default = current
 [core]
   autocrlf = input
-	editor = mvim
-	excludesfile = /Users/williammathewson/.yadr/git/gitignore
+    editor = mvim
+    excludesfile = /Users/williammathewson/.yadr/git/gitignore
   pager = less
-	;editor = =
-	editor = nvim
+    ;editor = =
+    editor = nvim
 [advice]
   statusHints = false
 [diff]
@@ -147,15 +147,22 @@
 [include]
   path = .gitconfig.user
 [user]
-	name = William Mathewson
-	email = wncmathewson@me.com
+    name = William Mathewson
+    email = wncmathewson@me.com
+    signingkey = 1BFF097B7744F6C2
 [github]
   user = neanias
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [fetch]
   prune = true
+[stash]
+    showPatch = true
+[commit]
+    gpgsign = true
+[gpg]
+    program = gpg1
